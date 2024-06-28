@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 18.75px;
+text-align: left;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    display: block;
+}
+
+nav ul li .donate-button {
+    background-color: #000;
+    color: #fff;
+    width: Hug (116px)px;
+    height: Hug (43px)px;
+    top: 12px;
+    left: 1274px;
+    padding: 12px 32px 12px 32px;
+    gap: 10px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 20px 10px;
+    min-width: 200px;
+}
+
+.column h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.column ul li {
+    margin: 10px 0;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.subscribe {
+    flex: 2;
+    margin: 20px 10px;
+    min-width: 200px;
+}
+
+.subscribe h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.subscribe form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    flex: 1;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    min-width: 150px;
+    /* margin-bottom: 10px; */
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.footer-h3{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 25.6px;
+text-align: left;
+
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column, .subscribe {
+        margin: 20px 0;
+    }
+    .footer-h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column, .subscribe {
+        margin: 10px 0;
+    }
+
+    .subscribe h3, .column h3 {
+        font-size: 16px;
+    }
+
+    .subscribe input[type="email"], .subscribe button {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .footer-h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .subscribe h3, .column h3 {
+        font-size: 14px;
+    }
+
+    .subscribe input[type="email"], .subscribe button {
+        padding: 6px;
+        font-size: 12px;
+    }
+    .footer-h3{
+        text-align: center;
+    }
+}
