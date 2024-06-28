@@ -29,48 +29,264 @@
                 </ul>
             </nav>
         </header>
-        <!-- page qo'shing -->
-         
-        <!-- footer page start -->
-        <footer>
-            <div class="footer-content">
-                <div class="column">
-                    <h3 class="footer-h3">Our team</h3>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">What we do</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3 class="footer-h3">More</h3>
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3 class="footer-h3">Connect</h3>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                    </ul>
-                </div>
-                <div class="subscribe">
-                    <h3 class="footer-h3">Subscribe to get latest updates</h3>
-                    <form>
-                        <input type="email" placeholder="Your email">
-                        <button type="submit">Subscribe</button>
-                    </form>
+    </div>
+    <!-- page qo'shing -->
+    <section>
+            <div class="container">
+                <div class="contents">
+                    <div class="contents-cp">
+                        <div class="content">
+                            <h1 class="save-h1">Save the environment today for a better tomorrow</h1>
+                            <div class="buttons">
+                                <button class="btn white-btn">What we do</button>
+                                <button class="btn play-btn" onclick="playVideo()">Play Video</button>
+                            </div>
+                        </div>
+                        <div class="video-texts">
+                            <span>23,800 trees planted</span>
+                            <hr class="hr-line">
+                            <span>5840 donations collected</span>
+                        </div>
+                    
+                    <div class="video-modal" id="videoModal">
+                        <div class="video-container">
+                            <video id="video" controls>
+                                <source src="./video/zootopia.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <button class="close-btn" onclick="closeVideo()">X</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-        <script src="./js/main.js"></script>
+        </div>
+    </section>
+    <!-- page 3 start -->
+    <div class="container">
+        <div class="page__father">
+            <div class="page__two">
+                <div class="content">
+                    <p class="title">KNOW ABOUT US</p>
+                    <h1 class="headline">We help nature smile and survive everywhere</h1>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    <p class="description">Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    <button class="learn-more">Learn more</button>
+                </div>
+                <div class="image-container">
+                    <img src="./images/children.svg" alt="Children in nature">
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="supporters">
+        <h3>Our Supporters</h3>
+        <div class="logos">
+            <img src="./images/logo/logo-one.svg" alt="Supporter 1">
+            <img src="./images/logo/logo-two.svg" alt="Supporter 2">
+            <img src="./images/logo/logo-three.svg" alt="Supporter 3">
+            <img src="./images/logo/logo-four.svg" alt="Supporter 4">
+            <img src="./images/logo/logo-five.svg" alt="Supporter 5">
+        </div>
+    </div>
+    <!-- page 4 start -->
+    <aside class="page-custom">
+        <div class="container-custom">
+            <div class="content-custom">
+                <h2>WHAT WE DO</h2>
+                <h1>We care for earth, care for the coming birth</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <div class="services-custom">
+                    <div class="service-custom">
+                        <div class="icon-custom">
+                            <img src="./images/logo/building-cc.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Build Healthy Cities</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <div class="service-custom">
+                        <div class="icon-custom">
+                            <img src="./images/logo/head-leaf.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Tree Plantation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <div class="service-custom">
+                        <div class="icon-custom">
+                            <img src="./images/logo/wather.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Protect Land and Water</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <div class="service-custom">
+                        <div class="icon-custom">
+                            <img src="./images/logo/dog.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Animal Safety</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-custom">
+                <img src="./images/dog-man.svg" alt="Man with a dog">
+            </div>
+        </div>
+    </aside>
+    <!-- page 5 start -->
+    <div class="content-wrapper">
+        <header class="main-header">
+            <div class="header-line-container">
+                <div class="header-line"></div>
+                <h2 class="header-subtitle">PROJECTS WE HAVE DONE</h2>
+            </div>
+            <h1 class="header-title">We are Creating sustainable society, for everyone and forever.</h1>
+        </header>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image project-image1"></div>
+                <h3 class="project-title">Mission 40K: Tree plantation</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                <button class="project-button">See more</button>
+            </div>
+            <div class="project-card">
+                <div class="project-image project-image2"></div>
+                <h3 class="project-title">Weekly cleanliness program in city</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                <button class="project-button">See more</button>
+            </div>
+            <div class="project-card">
+                <div class="project-image project-image3"></div>
+                <h3 class="project-title">Wildlife safety program 2021</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                <button class="project-button">See more</button>
+            </div>
+        </div>
+    </div>
+    <!-- page 6 start -->
+    <section class="donation-section">
+        <div class="content-six">
+            <h2 class="title-donation">How we spend your donations and where it goes</h2>
+            <p class="description">We understand that when you make a donation, you want to know exactly where your money is going and we pledge to be transparent.</p>
+            <ul class="donation-list">
+                <li class="donation-item planting-trees">40% planting trees</li>
+                <li class="donation-item cleanliness-program">35% cleanliness program</li>
+                <li class="donation-item helping-people">10% helping people</li>
+                <li class="donation-item animal-safety">10% animal safety</li>
+                <li class="donation-item feeding-poor">5% feeding the poor</li>
+            </ul>
+        </div>
+        <div class="chart">
+            <img src="./images/Chart.svg" alt="Donation Chart" class="chart-image">
+        </div>
+    </section>
+    <!-- page 7 start -->
+    <div class="section-container">
+        <div class="content__seven">
+            <h1>You can contribute to make the environment greener!</h1>
+            <div class="buttons">
+                <button class="button volunteer">Join as a volunteer</button>
+                <button class="button donate">Donate</button>
+            </div>
+        </div>
+    </div>
+    <!-- page 8 start -->
+    <div class="news-container">
+        <div class="news-title">Read Our News</div>
+        <div class="news-grid-layout">
+            <div class="news-article">
+                <img src="./images/thumb-1.svg" alt="News Image 1">
+                <h3 class="news-article-title">Don't destroy greenery and don't spoil scenery</h3>
+                <p class="news-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
+            </div>
+            <div class="news-article">
+                <img src="./images/thumb-2.svg" alt="News Image 2">
+                <h3 class="news-article-title">Is climate change happening faster than expected?</h3>
+                <p class="news-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
+            </div>
+            <div class="news-article">
+                <img src="./images/thumb-3.svg" alt="News Image 3">
+                <h3 class="news-article-title">Top 10 facts about wind farms you didn't know</h3>
+                <p class="news-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
+            </div>
+            <div class="news-article">
+                <img src="./images/thumb-4.svg" alt="News Image 4">
+                <h3 class="news-article-title">Our goal is to make water available for everyone</h3>
+                <p class="news-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
+            </div>
+        </div>
+    </div>
+    <!-- page 8 start -->
+    <div class="events">
+        <h2>Our Events</h2>
+        <div class="event">
+            <div class="event-date">
+                <span class="date">23</span>
+                <span class="month">SEP</span>
+            </div>
+            <div class="event-details">
+                <h3>Say no to plastic usage and save the planet</h3>
+                <a href="#" class="event-link">→</a>
+            </div>
+        </div>
+        <div class="event">
+            <div class="event-date">
+                <span class="date">25</span>
+                <span class="month">SEP</span>
+            </div>
+            <div class="event-details">
+                <h3>Weekly cleaning program</h3>
+                <a href="#" class="event-link">→</a>
+            </div>
+        </div>
+    </div>
+    <!-- footer page start -->
+    <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="column">
+                        <h3 class="footer-h3">Our team</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">What we do</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="footer-h3">More</h3>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Donate</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="footer-h3">Connect</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <h3 class="footer-h3">Subscribe to get latest updates</h3>
+                        <form>
+                            <input type="email" placeholder="Your email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </footer>
+<script src="./js/main.js"></script>
 </body>
 </html>
