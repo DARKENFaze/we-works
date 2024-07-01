@@ -1,23 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav ul");
 
-    menuToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-    });
+  menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
 });
 //video
 function playVideo() {
-    var videoModal = document.getElementById('videoModal');
-    var video = document.getElementById('video');
-    videoModal.style.display = 'flex';
-    video.play();
+  var videoPopup = document.getElementById("videoPopup");
+  var videoFrame = document.getElementById("videoFrame");
+  videoFrame.src = "https://youtu.be/rZ-n-QwdNxg?si=FwV0W9tXsW9MNcyH"; // Replace with your video URL
+  videoPopup.style.display = "flex";
 }
 
 function closeVideo() {
-    var videoModal = document.getElementById('videoModal');
-    var video = document.getElementById('video');
-    video.pause();
-    video.currentTime = 0;
-    videoModal.style.display = 'none';
+  var videoPopup = document.getElementById("videoPopup");
+  var videoFrame = document.getElementById("videoFrame");
+  videoFrame.src = "https://youtu.be/rZ-n-QwdNxg?si=FwV0W9tXsW9MNcyH";
+  videoPopup.style.display = "none";
+}
+
+function redirectToYoutube() {
+  window.location.href = "https://youtube.com/@darken_ae?si=rGYx8a3vQ_BMZZWR"; // Replace with your YouTube channel URL
 }
